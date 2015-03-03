@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nome Completo</title>
+    <title>Rodrigo Scomação</title>
 
     <meta charset="utf-8">
 
@@ -19,60 +19,73 @@
           <img src="http://www.gravatar.com/avatar/5693734a26f0780eae0024da286e9b1a.png?s=320" alt="Profile picture" />
 
           <figcaption>
-            <div class="name">Nome Completo</div>
-            <div class="profession">Cargo</div>
+            <div class="name">Rodrigo Scomação</div>
+            <div class="profession">Analista de Sistemas</div>
           </figcaption>
         </figure>
 
         <div class="articles">
           <article class="about">
             <figure>
-              <img src="images/icon_white_person.png" />
+              <img src="images/icon_white_person.png" alt="Um aficionado por tecnologia em uma eterna busca por conhecimento." />
             </figure>
 
             <div class="body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+              Um aficionado por tecnologia em uma eterna busca por conhecimento.
             </div>
           </article>
 
           <article class="mail">
             <figure>
-              <img src="images/icon_white_mail.png" />
+              <img src="images/icon_white_mail.png" alt="E-mail" />
             </figure>
 
             <div class="body">
-              mail@example.com
+              rodrigo.sc.na@gmail.com
               <div class="caption">Pessoal</div>
             </div>
           </article>
 
           <article class="phone">
             <figure>
-              <img src="images/icon_white_phone.png" />
+              <img src="images/icon_white_phone.png" alt="Telefone" />
             </figure>
 
             <div class="body">
-              +## ## ####-####
+              +55 41 9639-8768
               <div class="caption">
                 Móvel
               </div>
             </div>
           </article>
 
-          <article class="address">
+          <article class="languages">
             <figure>
-              <img src="images/icon_white_map.png" />
+              <img src="images/icon_white_language.png" alt="Idiomas" />
             </figure>
 
             <div class="body">
-              Cidade, UF
+              Inglês
               <div class="caption">
-                País
+                Nível Avançado
               </div>
             </div>
           </article>
 
+          <article class="address">
+            <figure>
+              <img src="images/icon_white_map.png" alt="Localização" />
+            </figure>
+
+            <div class="body">
+              Curitiba, PR
+              <div class="caption">
+                Brasil
+              </div>
+            </div>
+          </article>
+
+          <!--
           <article class="knowledge">
             <figure>
               <img src="images/icon_white_board.png" />
@@ -84,21 +97,22 @@
               <div class="skills">
                 <ul>
                   <li>
-                    Conhecimento #1
+                    Desenvolvimento de Software
                     <input type="range" value="100" disabled />
                   </li>
                   <li>
-                    Conhecimento #2
+                    Análise de Sistemas
                     <input type="range" value="100" disabled />
                   </li>
                   <li>
-                    Conhecimento #3
+                    Gestão de Projetos
                     <input type="range" value="100" disabled />
                   </li>
                 </ul>
               </div>
             </div>
           </article>
+          -->
         </div>
       </aside>
 
@@ -119,7 +133,7 @@
                   <b>E-mail</b>
                 </header>
                 <main>
-                  mail@example.com
+                  rodrigo.sc.na@gmail.com
                   <div class="caption">
                     Pessoal
                   </div>
@@ -131,9 +145,21 @@
                   <b>Telefone</b>
                 </header>
                 <main>
-                  +## ## ####-####
+                  +55 41 9639-8768
                   <div class="caption">
                     Móvel
+                  </div>
+                </main>
+              </article>
+
+              <article>
+                <header>
+                  <b>Idiomas</b>
+                </header>
+                <main>
+                  Inglês Avançado
+                  <div class="caption">
+                    Leitura, Escrita e Conversação
                   </div>
                 </main>
               </article>
@@ -143,9 +169,9 @@
                   <b>Localização</b>
                 </header>
                 <main>
-                  Cidade, UF
+                  Curitiba, PR
                   <div class="caption">
-                    País
+                    Brasil
                   </div>
                 </main>
               </article>
@@ -158,16 +184,22 @@
                   <div class="skills">
                     <ul>
                       <li>
-                        Conhecimento #1
-                        <input type="range" value="100" disabled />
+                        Desenvolvimento de Software
+                        <div class="progress_range">
+                          <div class="progress" style="100%"></div>
+                        </div>
                       </li>
                       <li>
-                        Conhecimento #2
-                        <input type="range" value="100" disabled />
+                        Análise de Sistemas
+                        <div class="progress_range">
+                          <div class="progress" style="90%"></div>
+                        </div>
                       </li>
                       <li>
-                        Conhecimento #3
-                        <input type="range" value="100" disabled />
+                        Gestão de Projetos
+                        <div class="progress_range">
+                          <div class="progress" style="80%"></div>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -186,40 +218,86 @@
             </header>
 
             <div class="articles">
+              <!--
               <article>
                 <header>
-                  <b>Cargo</b>
+                  <b>Gestor de Projetos</b>
                   -
-                  Empresa
+                  Inovare Tecnologia
                 </header>
-                <div class="caption">MMM/YYYY - MMM/YYYY</div>
+                <div class="caption">Jul/2013 - Mar/2015</div>
                 <main>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Atuação como gestor de projetos de software retendo ainda
+                    responsabilidades nas áreas de de análise e
+                    desenvolvimento.
+                  </p>
+                  <p>
+                    Durante o período de atuação na gestão dos projetos de
+                    software da empresa, tive a oportunidade de implementar,
+                    em conjunto aos demais colaboradores, uma metodologia de
+                    gestão para desenvolvimento ágil baseado em Scrum.
+                  </p>
+                  <p>
+                    Participei ativamente na gestão estratégica da empresa bem
+                    como na elaboração e negociação de cronogramas junto aos
+                    clientes e na gestão das espectativas dos stakeholders de
+                    projetos sob minha responsabilidade.
                   </p>
                 </main>
               </article>
+              -->
 
               <article>
                 <header>
-                  <b>Cargo</b>
+                  <b>Analista/Desenvolvedor</b>
                   -
-                  Empresa
+                  Inovare Tecnologia
                 </header>
-                <div class="caption">MMM/YYYY - MMM/YYYY</div>
+                <div class="caption">Jun/2009 - Jun/2013</div>
                 <main>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Atuação como analista/desenvolvedor para softwares de
+                    plataformas Web e Mobile através de diversas tecnologias.
+                  </p>
+                  <p>
+                    Tive a oportunidade de trabalhar com análise de sistemas
+                    utilizando principalmente a UML como padrão de modelagem
+                    sempre desenvolvendo novas habilidades e características
+                    necessárias para entender e projetar um sistema adequado
+                    às necessidades do cliente.
+                  </p>
+                  <p>
+                    No mesmo período, pude também trabalhar com desenvolvimento
+                    de software em diversas tecnologias distintas, dentre elas:
+                    <ul>
+                      <li>
+                        Desenvolvimento de aplicativos para as plataformas
+                        Android, iOS e Windows Phone utilizando tecnologias de
+                        desenvolvimento nativas;
+                      </li>
+                      <li>
+                        Desenvolvimento de aplicativos híbridos para Android e
+                        iOS utilizando a plataforma PhoneGAP;
+                      </li>
+                      <li>
+                        Desenvolvimento de sistemas web utilizando Framework
+                        RubyOnRails, bem como a integração de plataformas Web e
+                        aplicativos móveis através de WebServices e APIs;
+                      </li>
+                      <li>
+                        Desenvolvimento web em PHP com a utilização de um
+                        framework proprietário do participei ativamente do
+                        desenvolvimento.
+                        Também participei de projetos de sistemas web
+                        utilizando C# juntamente com frameworks da plataforma
+                        Asp.NET, tais como MVC e WebForms;
+                      </li>
+                      <li>
+                        Desenvolvimento e estruturaçào de front-end web
+                        dinâmicos utilizando HTML, CSS e JavaScript.
+                      </li>
+                    </ul>
                   </p>
                 </main>
               </article>
@@ -238,38 +316,40 @@
             <div class="articles">
               <article>
                 <header>
-                  <b>Formação</b>
+                  <b>Pós-Graduação em Engenharia de Software</b>
                   -
-                  Instituição
+                  Universidade Federal do Paraná
                 </header>
-                <div class="caption">MMM/YYYY - MMM/YYYY</div>
+                <div class="caption">Cursando</div>
                 <main>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    O curso de pós-graduação <i>lato sensu</i> de
+                    Especialização em Engenharia de Software visa propiciar a
+                    atualização dos profissionais da área de informática no que
+                    se refere às novas tecnologias de engenharia de software,
+                    como Metodologias de Desenvolvimento, programação na
+                    linguagem JAVA para Web e, inclusive, Desenvolvimento para
+                    Dispositivos Móveis.
                   </p>
                 </main>
               </article>
 
               <article>
                 <header>
-                  <b>Formação</b>
+                  <b>Graduação em Sistemas de Informação</b>
                   -
-                  Instituição
+                  Universidade Federal do Paraná
                 </header>
-                <div class="caption">MMM/YYYY - MMM/YYYY</div>
+                <div class="caption">2008 - 2010</div>
                 <main>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    O objetivo do curso é formar o profissional Analista e
+                    Desenvolvedor de Sistemas da área de informática com a
+                    competência para analisar as necessidades e demandas da
+                    sociedade, construindo soluções que explorem e apliquem
+                    os recursos de informática e de novas tecnologias, atuando
+                    com princípios éticos e promovendo o desenvolvimento
+                    humano.
                   </p>
                 </main>
               </article>
@@ -280,10 +360,10 @@
             <nav>
               <ul>
                 <li>
-                  <a href="http://www.example.com/">www.example.com</a>
+                  <a href="http://www.rodrigosn.com/">www.rodrigosn.com</a>
                 </li>
                 <li>
-                  <a href="mailto:mail@example.com">mail@example.com</a>
+                  <a href="mailto:rodrigo.sc.na@gmail.com">rodrigo.sc.na@gmail.com</a>
                 </li>
               </ul>
             </nav>
