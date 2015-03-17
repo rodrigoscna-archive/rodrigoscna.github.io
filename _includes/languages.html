@@ -1,0 +1,6 @@
+{% for language in site.data.personal_info.languages %}
+  <div class="item">
+    {{ language.language }}
+    <div class="caption">{{ language.level }}</div>
+  </div>
+{% endfor %}

@@ -1,111 +1,64 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Rodrigo Scomação</title>
-
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,300&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <section>
+---
+layout: default
+---
       <aside>
-        <figure>
-          <img src="http://www.gravatar.com/avatar/5693734a26f0780eae0024da286e9b1a.png?s=320" alt="Profile picture" />
+        <div class="profile">
+          <figure>
+            <img src="{{ site.data.personal_info.picture }}" alt="Profile picture" />
 
-          <figcaption>
-            <div class="name">Rodrigo Scomação</div>
-            <div class="profession">Analista de Sistemas</div>
-          </figcaption>
-        </figure>
+            <figcaption>
+              <div class="name">{{ site.data.personal_info.name }}</div>
+              <div class="profession">{{ site.data.personal_info.profession }}</div>
+            </figcaption>
+          </figure>
+        </div>
 
-        <div class="articles">
-          <article class="about">
+        <div class="personal_info">
+          <div class="item">
             <figure>
-              <img src="images/icon_white_person.png" alt="Um aficionado por tecnologia em uma eterna busca por conhecimento." />
+              <img src="images/icon_white_person.png" alt="{{ site.data.personal_info.quote }}" />
             </figure>
 
             <div class="body">
-              Um entusiasta da tecnologia em uma eterna busca por conhecimento.
+              {{ site.data.personal_info.quote }}
             </div>
-          </article>
+          </div>
 
-          <article class="mail">
+          <div class="item">
             <figure>
               <img src="images/icon_white_mail.png" alt="E-mail" />
             </figure>
 
             <div class="body">
-              rodrigo.sc.na@gmail.com
-              <div class="caption">Pessoal</div>
+              {% include emails.html %}
             </div>
-          </article>
+          </div>
 
-          <article class="languages">
+          <div class="item">
             <figure>
               <img src="images/icon_white_language.png" alt="Idiomas" />
             </figure>
 
             <div class="body">
-              Inglês
-              <div class="caption">
-                Nível Avançado
-              </div>
+              {% include languages.html %}
             </div>
-          </article>
+          </div>
 
-          <article class="address">
+          <div class="item">
             <figure>
               <img src="images/icon_white_map.png" alt="Localização" />
             </figure>
 
             <div class="body">
-              Curitiba, PR
-              <div class="caption">
-                Brasil
-              </div>
+              {% include location.html %}
             </div>
-          </article>
-
-          <!--
-          <article class="knowledge">
-            <figure>
-              <img src="images/icon_white_board.png" />
-            </figure>
-
-            <div class="body">
-              Conhecimento Técnico
-
-              <div class="skills">
-                <ul>
-                  <li>
-                    Desenvolvimento de Software
-                    <input type="range" value="100" disabled />
-                  </li>
-                  <li>
-                    Análise de Sistemas
-                    <input type="range" value="100" disabled />
-                  </li>
-                  <li>
-                    Gestão de Projetos
-                    <input type="range" value="100" disabled />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          -->
+          </div>
         </div>
       </aside>
 
       <main>
         <div class="sections">
-          <section class="about">
+          <section class="personal_info">
             <header>
               <figure>
                 <img src="images/icon_black_person.png" />
@@ -119,69 +72,28 @@
                 <header>
                   <b>E-mail</b>
                 </header>
-                <main>
-                  rodrigo.sc.na@gmail.com
-                  <div class="caption">
-                    Pessoal
-                  </div>
-                </main>
+                <div class="body">
+                  {% include emails.html %}
+                </div>
               </article>
 
               <article>
                 <header>
                   <b>Idiomas</b>
                 </header>
-                <main>
-                  Inglês Avançado
-                  <div class="caption">
-                    Leitura, Escrita e Conversação
-                  </div>
-                </main>
+                <div class="body">
+                  {% include languages.html %}
+                </div>
               </article>
 
               <article>
                 <header>
                   <b>Localização</b>
                 </header>
-                <main>
-                  Curitiba, PR
-                  <div class="caption">
-                    Brasil
-                  </div>
-                </main>
+                <div class="body">
+                  {% include location.html %}
+                </div>
               </article>
-
-              <!--
-              <article class="knowledge">
-                <header>
-                  <b>Conhecimento Técnico</b>
-                </header>
-                <main>
-                  <div class="skills">
-                    <ul>
-                      <li>
-                        Desenvolvimento de Software
-                        <div class="progress_range">
-                          <div class="progress" style="100%"></div>
-                        </div>
-                      </li>
-                      <li>
-                        Análise de Sistemas
-                        <div class="progress_range">
-                          <div class="progress" style="90%"></div>
-                        </div>
-                      </li>
-                      <li>
-                        Gestão de Projetos
-                        <div class="progress_range">
-                          <div class="progress" style="80%"></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </main>
-              </article>
-              -->
             </div>
           </section>
 
@@ -195,89 +107,19 @@
             </header>
 
             <div class="articles">
-              <!--
-              <article>
-                <header>
-                  <b>Gestor de Projetos</b>
-                  -
-                  Inovare Tecnologia
-                </header>
-                <div class="caption">Jul/2013 - Mar/2015</div>
-                <main>
-                  <p>
-                    Atuação como gestor de projetos de software retendo ainda
-                    responsabilidades nas áreas de de análise e
-                    desenvolvimento.
-                  </p>
-                  <p>
-                    Durante o período de atuação na gestão dos projetos de
-                    software da empresa, tive a oportunidade de implementar,
-                    em conjunto aos demais colaboradores, uma metodologia de
-                    gestão para desenvolvimento ágil baseado em Scrum.
-                  </p>
-                  <p>
-                    Participei ativamente na gestão estratégica da empresa bem
-                    como na elaboração e negociação de cronogramas junto aos
-                    clientes e na gestão das espectativas dos stakeholders de
-                    projetos sob minha responsabilidade.
-                  </p>
-                </main>
-              </article>
-              -->
-
-              <article>
-                <header>
-                  <b>Analista/Desenvolvedor</b>
-                  -
-                  Inovare Tecnologia
-                </header>
-                <div class="caption">Jun/2009 - Jun/2013</div>
-                <main>
-                  <p>
-                    Atuação como analista/desenvolvedor para softwares de
-                    plataformas Web e Mobile através de diversas tecnologias.
-                  </p>
-                  <p>
-                    Tive a oportunidade de trabalhar com análise de sistemas
-                    utilizando principalmente a UML como padrão de modelagem
-                    sempre desenvolvendo novas habilidades e características
-                    necessárias para entender e projetar um sistema adequado
-                    às necessidades do cliente.
-                  </p>
-                  <p>
-                    No mesmo período, pude também trabalhar com desenvolvimento
-                    de software em diversas tecnologias distintas, dentre elas:
-                    <ul>
-                      <li>
-                        Desenvolvimento de aplicativos para as plataformas
-                        Android, iOS e Windows Phone utilizando tecnologias de
-                        desenvolvimento nativas;
-                      </li>
-                      <li>
-                        Desenvolvimento de aplicativos híbridos para Android e
-                        iOS utilizando a plataforma PhoneGAP;
-                      </li>
-                      <li>
-                        Desenvolvimento de sistemas web utilizando Framework
-                        RubyOnRails, bem como a integração de plataformas Web e
-                        aplicativos móveis através de WebServices e APIs;
-                      </li>
-                      <li>
-                        Desenvolvimento web em PHP com a utilização de um
-                        framework proprietário do participei ativamente do
-                        desenvolvimento.
-                        Também participei de projetos de sistemas web
-                        utilizando C# juntamente com frameworks da plataforma
-                        Asp.NET, tais como MVC e WebForms;
-                      </li>
-                      <li>
-                        Desenvolvimento e estruturaçào de front-end web
-                        dinâmicos utilizando HTML, CSS e JavaScript.
-                      </li>
-                    </ul>
-                  </p>
-                </main>
-              </article>
+              {% for item in site.data.professional_history %}
+                <article>
+                  <header>
+                    <b>{{ item.role }}</b>
+                    -
+                    {{ item.company }}
+                  </header>
+                  <div class="caption">{{ item.period }}</div>
+                  <div class="description">
+                    {{ item.description | markdownify }}
+                  </div>
+                </article>
+              {% endfor %}
             </div>
           </section>
 
@@ -291,62 +133,20 @@
             </header>
 
             <div class="articles">
-              <article>
-                <header>
-                  <b>Pós-Graduação em Engenharia de Software</b>
-                  -
-                  Universidade Federal do Paraná
-                </header>
-                <div class="caption">Cursando</div>
-                <main>
-                  <p>
-                    O curso de pós-graduação <i>lato sensu</i> de
-                    Especialização em Engenharia de Software visa propiciar a
-                    atualização dos profissionais da área de informática no que
-                    se refere às novas tecnologias de engenharia de software,
-                    como Metodologias de Desenvolvimento, programação na
-                    linguagem JAVA para Web e, inclusive, Desenvolvimento para
-                    Dispositivos Móveis.
-                  </p>
-                </main>
-              </article>
-
-              <article>
-                <header>
-                  <b>Graduação em Sistemas de Informação</b>
-                  -
-                  Universidade Federal do Paraná
-                </header>
-                <div class="caption">2008 - 2010</div>
-                <main>
-                  <p>
-                    O objetivo do curso é formar o profissional Analista e
-                    Desenvolvedor de Sistemas da área de informática com a
-                    competência para analisar as necessidades e demandas da
-                    sociedade, construindo soluções que explorem e apliquem
-                    os recursos de informática e de novas tecnologias, atuando
-                    com princípios éticos e promovendo o desenvolvimento
-                    humano.
-                  </p>
-                </main>
-              </article>
+              {% for item in site.data.academic_background %}
+                <article>
+                  <header>
+                    <b>{{ item.class }}</b>
+                    -
+                    {{ item.institution }}
+                  </header>
+                  <div class="caption">{{ item.period }}</div>
+                  <div class="description">
+                    {{ item.description | markdownify }}
+                  </div>
+                </article>
+              {% endfor %}
             </div>
-          </section>
-
-          <section class="information">
-            <nav>
-              <ul>
-                <li>
-                  <a href="http://www.rodrigosn.com/">www.rodrigosn.com</a>
-                </li>
-                <li>
-                  <a href="mailto:rodrigo.sc.na@gmail.com">rodrigo.sc.na@gmail.com</a>
-                </li>
-              </ul>
-            </nav>
           </section>
         </div>
       </main>
-    </section>
-  </body>
-</html>

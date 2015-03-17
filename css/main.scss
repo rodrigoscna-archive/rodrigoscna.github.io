@@ -1,0 +1,349 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "reset";
+@import "variables";
+
+body {
+  background: $grey-100;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: $font-family;
+  min-width: 360px;
+
+  section {
+    background: $grey-200;
+    border-radius: 2px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.16),
+                0  2px  5px rgba(0, 0, 0, 0.26);
+    margin: 32px auto;
+    position: relative;
+    width: 1152px;
+
+    &:after {
+      clear: both;
+      content: " ";
+      display: block;
+    }
+
+    aside {
+      background: $blue-500;
+      bottom: 0;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 320px;
+
+      .profile {
+        figure {
+          margin: 0;
+          padding: 0;
+          position: relative;
+
+          img {
+            display: block;
+            height: 320px;
+            width: 320px;
+          }
+
+          figcaption {
+            bottom: 20px;
+            font-family: "Roboto Condensed", sans-serif;
+            left: 80px;
+            position: absolute;
+
+            .name {
+              font-size: 24px;
+              line-height: 32px;
+            }
+
+            .profession {
+              font-size: 15px;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+
+      .personal_info {
+        margin-top: -4px;
+
+        .item {
+          margin: 32px 0;
+          position: relative;
+
+          &:last-child .body {
+            border-bottom: none;
+          }
+
+          figure {
+            display: inline-block;
+            left: 24px;
+            position: absolute;
+            width: 24px;
+          }
+
+          figure img {
+            display: block;
+            height: 24px;
+            width: 24px;
+          }
+
+          .body {
+            border-bottom: 1px solid $divider-light;
+            font-size: 13px;
+            line-height: 24px;
+            margin-left: 80px;
+            padding-bottom: 32px;
+            padding-right: 24px;
+            text-align: justify;
+
+            .item {
+              margin: 0;
+              margin-top: 16px;
+              padding: 0;
+            }
+          }
+
+          .caption {
+            color: rgba(255, 255, 255, 0.87);
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    main {
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.87);
+      margin-left: 320px;
+      min-height: 1024px;
+      padding: 32px;
+      width: 832px;
+
+      .sections {
+        margin-top: -32px;
+
+        section {
+          background: #FFFFFF;
+          border-radius: 2px;
+          box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12),
+                      0  1px 2px rgba(0, 0, 0, 0.24);
+          box-sizing: border-box;
+          float: none;
+          margin: 32px 0;
+          padding: 24px;
+          width: 768px;
+
+          &.personal_info {
+            display: none;
+          }
+
+          header {
+            margin-top: 24px;
+            /*height: 32px;*/
+            position: relative;
+          }
+
+          header figure {
+            display: inline-block;
+            margin: 0;
+            padding: 4px;
+            position: absolute;
+            width: 24px;
+          }
+
+          header figure img {
+            display: block;
+            height: 24px;
+            width: 24px;
+          }
+
+          header h1 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            margin-left: 56px;
+          }
+
+          .articles {
+            margin-left: 56px;
+            margin-right: 24px;
+
+            article {
+              margin: 16px 0;
+            }
+
+            article header {
+              font-size: 15px;
+              line-height: 28px
+            }
+
+            article .caption {
+              color: rgba(75, 150, 191, 0.87);
+              font-size: 13px;
+              line-height: 20px
+            }
+
+            article .description {
+              float: none;
+              font-size: 13px;
+              font-weight: 300;
+              line-height: 20px;
+              margin: 0;
+              min-height: 0;
+              padding: 0;
+              text-align: justify;
+              width: 100%;
+
+              p {
+                margin: 12px 0;
+              }
+
+              ul {
+                padding-left: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  body {
+    section {
+      width: 640px;
+
+      aside {
+        margin-left: 0;
+        position: static;
+        width: 100%;
+
+        .profile {
+          figure {
+            img {
+              height: 128px;
+              width: 128px;
+            }
+
+            figcaption {
+              top: 20px;
+              font-family: "Roboto Condensed", sans-serif;
+              left: 148px;
+              position: absolute;
+            }
+          }
+        }
+
+        .personal_info {
+          display: none;
+          margin: 32px 0;
+          position: relative;
+        }
+      }
+
+      main {
+        margin-left: 0;
+        min-height: 0;
+        padding: 32px;
+        width: 640px;
+
+        .sections {
+          margin-bottom: -32px;
+
+          section {
+            width: auto;
+
+            &.personal_info {
+              display: block;
+
+              .item {
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    section {
+      margin: 0;
+      width: auto;
+
+      aside {
+        width: auto;
+
+        .profile {
+          figure {
+            img {
+              height: 64px;
+              width: 64px;
+            }
+
+            figcaption {
+              left: 84px;
+              top: 0;
+            }
+          }
+        }
+      }
+
+      main {
+        margin: 0;
+        padding: 0;
+        width: auto;
+
+        .sections {
+          margin-top: 0;
+
+          section {
+            box-shadow: none;
+            border-bottom: 1px solid #B6B6B6;
+            margin: 0;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    section {
+      main {
+        .sections {
+          section {
+            header {
+              figure {
+                display: none;
+              }
+
+              h1 {
+                margin-left: 0;
+              }
+            }
+
+            .articles {
+              margin-left: 0;
+            }
+
+            nav ul li {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

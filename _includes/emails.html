@@ -1,0 +1,6 @@
+{% for email in site.data.personal_info.emails %}
+  <div class="item">
+    {{ email.email }}
+    <div class="caption">{{ email.type }}</div>
+  </div>
+{% endfor %}
