@@ -64,7 +64,7 @@ layout: default
                 <img src="images/icon_black_person.png" />
               </figure>
 
-              <h1>Dados Pessoais</h1>
+              <h1>{{ site.data.locale.label.personal_info }}</h1>
             </header>
 
             <div class="articles">
@@ -93,6 +93,24 @@ layout: default
                 <div class="body">
                   {% include location.html %}
                 </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="print_info">
+            <header>
+              <figure>
+                <img src="images/icon_black_person.png" />
+              </figure>
+
+              <h1>{{ site.data.personal_info.name }}</h1>
+
+              <div class="caption">{{ site.data.personal_info.profession }}</div>
+            </header>
+
+            <div class="articles">
+              <article>
+                {% include print_info.html %}
               </article>
             </div>
           </section>

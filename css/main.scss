@@ -82,12 +82,12 @@ body {
             left: 24px;
             position: absolute;
             width: 24px;
-          }
 
-          figure img {
-            display: block;
-            height: 24px;
-            width: 24px;
+            img {
+              display: block;
+              height: 24px;
+              width: 24px;
+            }
           }
 
           .body {
@@ -141,31 +141,41 @@ body {
             display: none;
           }
 
+          &.print_info {
+            display: none;
+          }
+
           header {
             margin-top: 24px;
             /*height: 32px;*/
             position: relative;
-          }
 
-          header figure {
-            display: inline-block;
-            margin: 0;
-            padding: 4px;
-            position: absolute;
-            width: 24px;
-          }
+            figure {
+              display: inline-block;
+              margin: 0;
+              padding: 4px;
+              position: absolute;
+              width: 24px;
 
-          header figure img {
-            display: block;
-            height: 24px;
-            width: 24px;
-          }
+              img {
+                display: block;
+                height: 24px;
+                width: 24px;
+              }
+            }
 
-          header h1 {
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 32px;
-            margin-left: 56px;
+            h1 {
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 32px;
+              margin-left: 56px;
+            }
+
+            .caption {
+              color: rgba(75, 150, 191, 0.87);
+              line-height: 20px;
+              margin-left: 56px;
+            }
           }
 
           .articles {
@@ -174,36 +184,36 @@ body {
 
             article {
               margin: 16px 0;
-            }
 
-            article header {
-              font-size: 15px;
-              line-height: 28px
-            }
-
-            article .caption {
-              color: rgba(75, 150, 191, 0.87);
-              font-size: 13px;
-              line-height: 20px
-            }
-
-            article .description {
-              float: none;
-              font-size: 13px;
-              font-weight: 300;
-              line-height: 20px;
-              margin: 0;
-              min-height: 0;
-              padding: 0;
-              text-align: justify;
-              width: 100%;
-
-              p {
-                margin: 12px 0;
+              header {
+                font-size: 15px;
+                line-height: 28px
               }
 
-              ul {
-                padding-left: 32px;
+              .caption {
+                color: rgba(75, 150, 191, 0.87);
+                font-size: 13px;
+                line-height: 20px
+              }
+
+              .description {
+                float: none;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 20px;
+                margin: 0;
+                min-height: 0;
+                padding: 0;
+                text-align: justify;
+                width: 100%;
+
+                p {
+                  margin: 12px 0;
+                }
+
+                ul {
+                  padding-left: 32px;
+                }
               }
             }
           }

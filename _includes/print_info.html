@@ -1,0 +1,30 @@
+<div class="item">
+  <b>{{ site.data.locale.label.location }}:</b>
+  {{ site.data.personal_info.location.area }}
+  -
+  {{ site.data.personal_info.location.country }}
+</div>
+
+<div class="item">
+  <b>{{ site.data.locale.label.email }}:</b>
+  <br />
+  <ul>
+    {% for email in site.data.personal_info.emails %}
+      <li>
+        {{ email.email }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="item">
+  <b>{{ site.data.locale.label.languages }}:</b>
+  <br />
+  <ul>
+    {% for language in site.data.personal_info.languages %}
+      <li>
+        {{ language.language }} - {{ language.level }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

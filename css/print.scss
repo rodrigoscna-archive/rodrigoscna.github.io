@@ -1,0 +1,67 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "reset";
+@import "variables";
+
+body {
+  background: #FFFFFF;
+
+  section {
+    background: #FFFFFF;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    &:after {
+      clear: both;
+      content: " ";
+      display: block;
+    }
+
+    aside {
+      display: none;
+    }
+
+    main {
+      margin-left: 0;
+
+      .sections {
+        margin-top: 0;
+
+        section {
+          background: #FFFFFF;
+          box-shadow: none;
+          margin: 0;
+          padding-top: 0;
+          width: 100%;
+
+          &.print_info {
+            display: block;
+
+            .articles {
+              article {
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 20px;
+
+                ul {
+                  padding-left: 32px;
+                }
+
+                .item {
+                  .caption {
+                    color: rgba(0, 0, 0, 0.87);
+                    font-size: 100%;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
