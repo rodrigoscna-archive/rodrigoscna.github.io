@@ -1,14 +1,14 @@
 name: "Rodrigo Scomação do Nascimento"
 emails:
   - email: "rodrigo.sc.na@gmail.com"
-    type: "Personal"
+    type: "Pessoal"
 languages:
-  - language: "English"
-    level: "Advanced Level"
+  - language: "Inglês"
+    level: "Nível Avançado"
 location:
   area: "Curitiba/PR"
-  country: "Brazil"
+  country: "Brasil"
 picture: "http://www.gravatar.com/avatar/5693734a26f0780eae0024da286e9b1a.png?s=320"
-profession: "Systems Analist/Developer"
-quote: "A technology enthusiast in an eternal quest for knowledge."
+profession: "Analista de Sistemas"
+quote: "Um entusiasta da tecnologia em uma eterna busca por conhecimento."
 site: "http://rodrigosn.com/"

@@ -1,0 +1,19 @@
+- class: "Graduação em Sistemas de Informação"
+  institution: "Universidade Federal do Paraná"
+  period: "2008 - 2010"
+  description: >
+    O objetivo do curso é formar o profissional analista e desenvolvedor de
+    sistemas da área de informática com a competência para analisar as
+    necessidades e demandas da sociedade, construindo soluções que explorem e
+    apliquem os recursos de informática e de novas tecnologias, atuando com
+    princípios éticos e promovendo o desenvolvimento humano.
+
+- class: "Pós-Graduação em Engenharia de Software"
+  institution: "Universidade Federal do Paraná"
+  period: "Cursando"
+  description: >
+    O curso de pós-graduação *lato sensu* de especialização em engenharia de
+    software visa propiciar a atualização dos profissionais da área de
+    informática no que se refere às novas tecnologias de engenharia de
+    software, como metodologias de desenvolvimento, programação na linguagem
+    Java para web e, inclusive, desenvolvimento para dispositivos móveis.

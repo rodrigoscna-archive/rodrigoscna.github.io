@@ -26,7 +26,7 @@ layout: default
 
           <div class="item">
             <figure>
-              <img src="images/icon_white_mail.png" alt="E-mail" />
+              <img src="images/icon_white_mail.png" alt="{{ site.data.locale.label.email }}" />
             </figure>
 
             <div class="body">
@@ -36,7 +36,7 @@ layout: default
 
           <div class="item">
             <figure>
-              <img src="images/icon_white_language.png" alt="Idiomas" />
+              <img src="images/icon_white_language.png" alt="{{ site.data.locale.label.languages }}" />
             </figure>
 
             <div class="body">
@@ -46,7 +46,7 @@ layout: default
 
           <div class="item">
             <figure>
-              <img src="images/icon_white_map.png" alt="Localização" />
+              <img src="images/icon_white_map.png" alt="{{ site.data.locale.label.location }}" />
             </figure>
 
             <div class="body">
@@ -70,7 +70,7 @@ layout: default
             <div class="articles">
               <article>
                 <header>
-                  <b>E-mail</b>
+                  <b>{{ site.data.locale.label.email }}</b>
                 </header>
                 <div class="body">
                   {% include emails.html %}
@@ -79,7 +79,7 @@ layout: default
 
               <article>
                 <header>
-                  <b>Idiomas</b>
+                  <b>{{ site.data.locale.label.languages }}</b>
                 </header>
                 <div class="body">
                   {% include languages.html %}
@@ -88,7 +88,7 @@ layout: default
 
               <article>
                 <header>
-                  <b>Localização</b>
+                  <b>{{ site.data.locale.label.location }}</b>
                 </header>
                 <div class="body">
                   {% include location.html %}
@@ -103,11 +103,11 @@ layout: default
                 <img src="images/icon_black_work.png" />
               </figure>
 
-              <h1>Histórico Profissional</h1>
+              <h1>{{ site.data.locale.label.professional_history }}</h1>
             </header>
 
             <div class="articles">
-              {% for item in site.data.professional_history %}
+              {% for item in site.data.professional_history reversed %}
                 <article>
                   <header>
                     <b>{{ item.role }}</b>
@@ -129,11 +129,11 @@ layout: default
                 <img src="images/icon_black_school.png" />
               </figure>
 
-              <h1>Formação Acadêmica</h1>
+              <h1>{{ site.data.locale.label.academic_background }}</h1>
             </header>
 
             <div class="articles">
-              {% for item in site.data.academic_background %}
+              {% for item in site.data.academic_background reversed %}
                 <article>
                   <header>
                     <b>{{ item.class }}</b>
