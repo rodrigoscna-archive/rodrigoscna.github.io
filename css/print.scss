@@ -37,6 +37,10 @@ body {
           padding-top: 0;
           width: 100%;
 
+          &.links {
+            display: none;
+          }
+
           &.print_info {
             display: block;
 

@@ -145,6 +145,29 @@ body {
             display: none;
           }
 
+          &.links {
+            ul {
+              list-style: none;
+
+              li {
+                display: inline-block;
+                float: left;
+                text-align: center;
+                width: 50%;
+
+                a {
+                  color: $light-blue-A700;
+                  line-height: 32px;
+                  text-decoration: none;
+
+                  &:focus, &:hover {
+                    color: $light-blue-A400;
+                  }
+                }
+              }
+            }
+          }
+
           header {
             margin-top: 24px;
             /*height: 32px;*/
@@ -172,7 +195,7 @@ body {
             }
 
             .caption {
-              color: rgba(75, 150, 191, 0.87);
+              color: $light-blue-A700;
               line-height: 20px;
               margin-left: 56px;
             }
@@ -191,7 +214,7 @@ body {
               }
 
               .caption {
-                color: rgba(75, 150, 191, 0.87);
+                color: $light-blue-A700;
                 font-size: 13px;
                 line-height: 20px
               }
@@ -334,6 +357,15 @@ body {
       main {
         .sections {
           section {
+
+            &.links {
+              ul {
+                li {
+                  width: 100%;
+                }
+              }
+            }
+
             header {
               figure {
                 display: none;
