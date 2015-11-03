@@ -263,16 +263,21 @@ body {
 
         .profile {
           figure {
+            padding-top: 0;
+            
             img {
+              border-radius: 0;
+              margin: 0;
               height: 128px;
               width: 128px;
             }
 
             figcaption {
-              top: 20px;
+              top: 0;
               font-family: "Roboto Condensed", sans-serif;
               left: 148px;
               position: absolute;
+              text-align: left;
             }
           }
         }
@@ -330,6 +335,7 @@ body {
 
             figcaption {
               left: 84px;
+              padding: 0;
               top: 0;
             }
           }
