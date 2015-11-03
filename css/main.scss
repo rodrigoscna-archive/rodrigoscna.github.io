@@ -26,7 +26,7 @@ body {
     }
 
     aside {
-      background: $blue-500;
+      background: $blue-grey-800;
       bottom: 0;
       box-sizing: border-box;
       color: #FFFFFF;
@@ -36,22 +36,27 @@ body {
       width: 320px;
 
       .profile {
+        background-color: $blue-grey-900;
+        
         figure {
           margin: 0;
           padding: 0;
+          padding-top: 40px;
           position: relative;
 
           img {
+            border-radius: 100%;
             display: block;
-            height: 320px;
-            width: 320px;
+            height: 160px;
+            margin: 0 80px;
+            width: 160px;
           }
 
           figcaption {
-            bottom: 16px;
             font-family: "Roboto Condensed", sans-serif;
-            left: 16px;
-            position: absolute;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            text-align: center;
 
             .name {
               font-size: 20px;
@@ -59,7 +64,7 @@ body {
             }
 
             .profession {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 28px;
             }
           }
